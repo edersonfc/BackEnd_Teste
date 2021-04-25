@@ -20,9 +20,12 @@ app.use(routes);
 
 
 //show Status of Server
-app.listen(3000, () => {
-	console.log('Executando em http://localhost:3000/');
+// app.listen(3000, () => {
+app.listen(process.env.PORT || 5000, () => {
+	console.log('Executando em http://localhost:5000/');
 });
+
+
 
 
 
